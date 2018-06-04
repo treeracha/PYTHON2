@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EpJgyNvzK8xQp88I04t9.2PnOnQMgNRHUYkUzkK6jEq./p92mOc1BPmafZPSgTcw4mkpBeT/czsWHBLRbK7Aewc=')
+arif.login(token='EtqzfOd9uJO5bw6zFJNf.zsjptOGse28bSLj1PuTA7W.K/NBSSUlwYFF5AyNLrxklMkyyFrTJ+7ePAdCAujp9HI=')
 arif.loginResult()
 print "Arif-Login Success\n\n=====[Sukses Login]====="
 
