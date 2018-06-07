@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EtqzfOd9uJO5bw6zFJNf.zsjptOGse28bSLj1PuTA7W.K/NBSSUlwYFF5AyNLrxklMkyyFrTJ+7ePAdCAujp9HI=')
+arif.login(token='EtcKnpsU3tPEEq5Roe2f.zsjptOGse28bSLj1PuTA7W.xTp6hmIgOAdAX39GxXhqc/A+qEC7BCoCDH07UKiKKjU=')
 arif.loginResult()
 print "Arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -20,193 +20,267 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-selfMessage ="""
-╭───────────────────╮
-│⊷〔Hi〕
-│⊷〔Me〕
-│⊷〔Mymid〕
-│⊷〔Mid @〕
-│⊷〔SearchID (ID LINE)〕
-│⊷〔Checkdate (DD/MM/YY)〕
-│⊷〔Kalender〕
-│⊷〔Steal contact〕
-│⊷〔Pp @〕
-│⊷〔Cover @〕
-│⊷〔Auto like〕
-│⊷〔Scbc Text〕
-│⊷〔Cbc Text〕
-│⊷〔Gbc Text〕
-│⊷〔Bio @〕
-│⊷〔Info @〕
-│⊷〔Name @〕
-│⊷〔Profile @〕
-│⊷〔Contact @〕
-│⊷〔Getvid @〕
-│⊷〔Friendlist〕
-│⊷〔Micadd @〕
-│⊷〔Micdel @〕
-│⊷〔Miclist〕
-╰───────────────────╯
-"""
+selfMessage ="""╭━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Hi〕
+┣🇮🇩━⏩〔Me〕
+┣🇮🇩━⏩〔Mymid〕
+┣🇮🇩━⏩〔Mid @〕
+┣🇮🇩━⏩〔SearchID〕
+┣🇮🇩━⏩〔Checkdate 〕
+┣🇮🇩━⏩〔Kalender〕
+┣🇮🇩━⏩〔Steal contact〕
+┣🇮🇩━⏩〔Pp @〕
+┣🇮🇩━⏩〔Cover @〕
+┣🇮🇩━⏩〔Auto like〕
+┣🇮🇩━⏩〔Scbc Text〕
+┣🇮🇩━⏩〔Cbc Text〕
+┣🇮🇩━⏩〔Gbc Text〕
+┣🇮🇩━⏩〔Bio @〕
+┣🇮🇩━⏩〔Info @〕
+┣🇮🇩━⏩〔Name @〕
+┣🇮🇩━⏩〔Profile @〕
+┣🇮🇩━⏩〔Contact @〕
+┣🇮🇩━⏩〔Getvid @〕
+┣🇮🇩━⏩〔Friendlist〕
+┣🇮🇩━⏩〔Micadd @〕
+┣🇮🇩━⏩〔Micdel @〕
+┣🇮🇩━⏩〔Miclist〕
+╰━━━━━━━━━━━━━━━━╯"""
 
-botMessage ="""
-╭──────────────╮
-│⊷〔Absen〕
-│⊷〔Respon〕
-│⊷〔Runtime〕
-│⊷〔copy @〕
-│⊷〔Copycontact〕
-│⊷〔Mybackup〕
-│⊷〔Mybio (Text)〕
-│⊷〔Myname (Text)〕
-│⊷〔@bye〕
-│⊷〔Bot on/off〕
-╰──────────────╯
-"""
+botMessage ="""╭━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Absen〕
+┣🇮🇩━⏩〔Respon〕
+┣🇮🇩━⏩〔Runtime〕
+┣🇮🇩━⏩〔copy @〕
+┣🇮🇩━⏩〔Copycontact〕
+┣🇮🇩━⏩〔Mybackup〕
+┣🇮🇩━⏩〔Mybio 〔T〕
+┣🇮🇩━⏩〔Myname 〔T〕
+┣🇮🇩━⏩〔@bye〕
+┣🇮🇩━⏩〔Bot on/off〕
+╰━━━━━━━━━━━━━━╯"""
 
-mediaMessage ="""
-╭────────────────────╮
-│⊷〔Youtube Judul Video〕
-│⊷〔Youtubevideo Judul Video〕
-│⊷〔Youtubesearch:0 Judul Video〕
-│⊷〔Image NamaGambar〕
-│⊷〔Say Text〕
-│⊷〔Say-en Text〕
-│⊷〔Say-jp Text〕
-│⊷〔Tr-id Text (Translate En Ke ID〕
-│⊷〔Tr-en Text (Translate ID Ke En〕
-│⊷〔Tr-th Text (Translate ID Ke Th〕
-│⊷〔Id@en Text (Translate ID Ke En〕
-│⊷〔Id@th Text (Translate ID Ke TH〕
-│⊷〔En@id Text (Translate En Ke ID〕
-│⊷〔Gift〕
-│⊷〔Giftbycontact〕
-│⊷〔Gif gore〕
-│⊷〔Google (Text)〕
-│⊷〔Playstore NamaApp〕
-│⊷〔Fancytext Text〕
-│⊷〔musik Judul-Penyanyi〕
-│⊷〔lirik Judul-Penyanyi〕
-│⊷〔musrik Judul-Penyanyi〕
-│⊷〔ig UrsnameInstagram〕
-│⊷〔Checkig UrsnameInstagram〕
-│⊷〔apakah Text (Kerang Ajaib)〕
-│⊷〔kapan Text (Kerang Ajaib)〕
-│⊷〔hari Text (Kerang Ajaib)〕
-│⊷〔berapa Text (Kerang Ajaib)〕
-│⊷〔berapakah Text〕
-╰────────────────────╯
-"""
+mediaMessage ="""╭━━━━━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Youtube J 〕
+┣🇮🇩━⏩〔Youtubevideo J〕
+┣🇮🇩━⏩〔Youtubesearch:0 J〕
+┣🇮🇩━⏩〔Image NamaGambar〕
+┣🇮🇩━⏩〔Say T〕
+┣🇮🇩━⏩〔Say-en T〕
+┣🇮🇩━⏩〔Say-jp T〕
+┣🇮🇩━⏩〔Tr-id T 〔 En  ID〕
+┣🇮🇩━⏩〔Tr-en T 〔ID  En〕
+┣🇮🇩━⏩〔Tr-th T 〔ID Th〕
+┣🇮🇩━⏩〔Id@en T 〔ID En〕
+┣🇮🇩━⏩〔Id@th T 〔ID TH〕
+┣🇮🇩━⏩〔En@id T 〔 En  ID〕
+┣🇮🇩━⏩〔Gift〕
+┣🇮🇩━⏩〔Giftbycontact〕
+┣🇮🇩━⏩〔Gif gore〕
+┣🇮🇩━⏩〔Google 〔T〕
+┣🇮🇩━⏩〔Playstore NamaApp〕
+┣🇮🇩━⏩〔Fancytext T〕
+┣🇮🇩━⏩〔musik J-Penyanyi〕
+┣🇮🇩━⏩〔lirik J-Penyanyi〕
+┣🇮🇩━⏩〔musrik J-Penyanyi〕
+┣🇮🇩━⏩〔ig 〔UsrNameIG〕
+┣🇮🇩━⏩〔Checkig 〔UsrIG〕
+┣🇮🇩━⏩〔apakah 〔T〕
+┣🇮🇩━⏩〔kapan 〔T〕
+┣🇮🇩━⏩〔hari 〔T 〕
+┣🇮🇩━⏩〔berapa〔 T 〕
+┣🇮🇩━⏩〔berapakah 〔T〕
+╰━━━━━━━━━━━━━━━━━━━━╯"""
 
-groupMessage ="""
-╭────────────────────╮
-│⊷〔Welcome〕
-│⊷〔Say welcome〕
-│⊷〔Invite creator〕
-│⊷〔Setview/Cctv〕
-│⊷〔Viewseen/Ciduk〕
-│⊷〔Gn: (NamaGroup)〕
-│⊷〔Tag all〕
-│⊷〔lurk on/off〕
-│⊷〔lurkers〕
-│⊷〔Recover〕
-│⊷〔Cancel〕
-│⊷〔Cancelall〕
-│⊷〔Gcreator〕
-│⊷〔Ginfo〕
-│⊷〔Gurl〕
-│⊷〔List group〕
-│⊷〔Pict group: (NamaGroup)〕
-│⊷〔Spam: (Text)〕
-│⊷〔Add all〕
-│⊷〔Kick: (Mid)〕
-│⊷〔Invite: (Mid)〕
-│⊷〔Invite〕
-│⊷〔Memlist〕
-│⊷〔Getgroup image〕
-│⊷〔Urlgroup Image〕
-╰────────────────────╯
-"""
+groupMessage ="""╭━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Welcome〕
+┣🇮🇩━⏩〔Say welcome〕
+┣🇮🇩━⏩〔Invite creator〕
+┣🇮🇩━⏩〔Cctv〕
+┣🇮🇩━⏩〔Ciduk〕
+┣🇮🇩━⏩〔Gn:〔NG〕
+┣🇮🇩━⏩〔Tag all〕
+┣🇮🇩━⏩〔lurk on/off〕
+┣🇮🇩━⏩〔lurkers〕
+┣🇮🇩━⏩〔Recover〕
+┣🇮🇩━⏩〔Cancel〕
+┣🇮🇩━⏩〔Cancelall〕
+┣🇮🇩━⏩〔Gcreator〕
+┣🇮🇩━⏩〔Ginfo〕
+┣🇮🇩━⏩〔Gurl〕
+┣🇮🇩━⏩〔List group〕
+┣🇮🇩━⏩〔Pict group:〔NG〕
+┣🇮🇩━⏩〔Spam: 〔T〕
+┣🇮🇩━⏩〔Add all〕
+┣🇮🇩━⏩〔Kick: (Mid)〕
+┣🇮🇩━⏩〔Invite: (Mid)〕
+┣🇮🇩━⏩〔Invite〕
+┣🇮🇩━⏩〔Memlist〕
+┣🇮🇩━⏩〔Getgroup image〕
+┣🇮🇩━⏩〔Urlgroup Image〕
+╰━━━━━━━━━━━━━━━━╯"""
 ar="u65224f4e8812136f01b25275a54b5aef"
 
-setMessage ="""
-╭───────────────╮
-│⊷〔Notif on/off〕
-│⊷〔Mimic on/off〕
-│⊷〔Url on/off〕
-│⊷〔Alwaysread on/off〕
-│⊷〔Sider on/off〕
-│⊷〔Contact on/off〕
-│⊷〔Sticker on〕
-│⊷〔Simisimi on/off〕
-╰───────────────╯
-"""
+setMessage ="""╭━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Notif on/off〕
+┣🇮🇩━⏩〔Mimic on/off〕
+┣🇮🇩━⏩〔Url on/off〕
+┣🇮🇩━⏩〔Read on/off〕
+┣🇮🇩━⏩〔Sider 0n/off〕
+┣🇮🇩━⏩〔K on/off〕
+┣🇮🇩━⏩〔Sticker on/off〕
+┣🇮🇩━⏩〔Simi on/off〕
+┣🇮🇩━⏩〔lurk on/off〕
+┣🇮🇩━⏩〔Bot on/off 〕
+╰━━━━━━━━━━━━━━━╯"""
 
-creatorMessage ="""
-╭────────────────────╮
-│⊷〔Crash〕
-│⊷〔Kickall〕
-│⊷〔Bc: (Text)〕
-│⊷〔Join group: (NamaGroup〕
-│⊷〔Leave group: (NamaGroup〕
-│⊷〔Leave all group〕
-│⊷〔Tag on/off〕
-│⊷〔Bot restart〕
-│⊷〔Turn off〕
-╰────────────────────╯
-"""
+creatorMessage ="""╭━━━━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Crash〕
+┣🇮🇩━⏩〔Kickall〕
+┣🇮🇩━⏩〔Bc: 〔T〕
+┣🇮🇩━⏩〔Join group: 〔NG〕
+┣🇮🇩━⏩〔Leave group: 〔NG〕
+┣🇮🇩━⏩〔Leave all group〕
+┣🇮🇩━⏩〔Tag on/off〕
+┣🇮🇩━⏩〔Bot restart〕
+┣🇮🇩━⏩〔Turn off〕
+╰━━━━━━━━━━━━━━━━━━━╯"""
 
-adminMessage ="""
-╭────────────────────╮
-│⊷〔Allprotect on/off〕
-│⊷〔Ban〕
-│⊷〔Unban〕
-│⊷〔Ban @〕
-│⊷〔Unban @〕
-│⊷〔Ban list〕
-│⊷〔Clear ban〕
-│⊷〔Kill〕
-│⊷〔Kick @〕
-│⊷〔Set member: (Jumblah)〕
-│⊷〔Ban group: (NamaGroup〕
-│⊷〔Del ban: (NamaGroup〕
-│⊷〔List ban〕
-│⊷〔Kill ban〕
-│⊷〔Glist〕
-│⊷〔Glistmid〕
-│⊷〔Details group: (Gid)〕
-│⊷〔Cancel invite: (Gid)〕
-│⊷〔Invitemeto: (Gid)〕
-│⊷〔Acc invite〕
-│⊷〔Removechat〕
-│⊷〔Qr on/off〕
-│⊷〔Autokick on/off〕
-│⊷〔Autocancel on/off〕
-│⊷〔Invitepro on/off〕
-│⊷〔Join on/off〕
-│⊷〔Joincancel on/off〕
-│⊷〔Respon1 on/off〕
-│⊷〔Respon2 on/off〕
-│⊷〔Respon3 on/off〕
-│⊷〔Responkick on/off〕
-╰────────────────────╯
-"""
+adminMessage ="""╭━━━━━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Allprotect on/off〕
+┣🇮🇩━⏩〔Ban〕
+┣🇮🇩━⏩〔Unban〕
+┣🇮🇩━⏩〔Ban @〕
+┣🇮🇩━⏩〔Unban @〕
+┣🇮🇩━⏩〔Ban list〕
+┣🇮🇩━⏩〔Clear ban〕
+┣🇮🇩━⏩〔Kill〕
+┣🇮🇩━⏩〔Kick @〕
+┣🇮🇩━⏩〔Set member: (Jml)〕
+┣🇮🇩━⏩〔Ban group: 〔NG〕
+┣🇮🇩━⏩〔Del ban: 〔NG〕
+┣🇮🇩━⏩〔List ban〕
+┣🇮🇩━⏩〔Kill ban〕
+┣🇮🇩━⏩〔Glist〕
+┣🇮🇩━⏩〔Glistmid〕
+┣🇮🇩━⏩〔Details group: 〔〔(Gid)〕
+┣🇮🇩━⏩〔Cancel invite: 〔(Gid)〕
+┣🇮🇩━⏩〔Invitemeto: 〔(Gid)〕
+┣🇮🇩━⏩〔Acc invite〕
+┣🇮🇩━⏩〔Removechat〕
+┣🇮🇩━⏩〔Qr on/off〕
+┣🇮🇩━⏩〔Autokick on/off〕
+┣🇮🇩━⏩〔Autocancel on/off〕
+┣🇮🇩━⏩〔Invitepro on/off〕
+┣🇮🇩━⏩〔Join on/off〕
+┣🇮🇩━⏩〔Joincancel on/off〕
+┣🇮🇩━⏩〔R1 on/off〕
+┣🇮🇩━⏩〔R2 on/off〕
+┣🇮🇩━⏩〔R3 on/off〕
+┣🇮🇩━⏩〔Rkick on/off〕
+╰━━━━━━━━━━━━━━━━━━━━╯"""
 
-helpMessage ="""
-╭────────────────────╮
-│⊷〔Help self〕
-│⊷〔Help bot〕
-│⊷〔Help group〕
-│⊷〔Help set〕
-│⊷〔Help media〕
-│⊷〔Help admin〕
-│⊷〔Help creator〕
-│⊷〔Owner〕
-│⊷〔Speed〕
-│⊷〔Speed test〕
-│⊷〔Status〕
-╰────────────────────╯
-"""
+kibarMessage =""" ╭━ W✒ E━ L✒ C━ O✒ M━ E✒✒✒
+╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓
+┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫
+┃HALLO▪┃ ◾KAMI DATANG LAGI   ▪┃
+┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯
+UNTUK MENGGUSUR ROOM KALIAN
+.        (҂`_´)
+         <,︻╦̵̵̿╤─ ҉     ~  •
+█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
+▂▄▅█████████▅▄▃▂…
+[███████████████████]
+◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
+╔═╦═╗╔══╗╔═╦╗╔══╗╔══╗╔══╗╔═╗
+║║║║║╚║║╝║║║║║╔═╣║╔═╣╚║║╝║╬║
+║║║║║╔║║╗║║║║║╚╗║║╚╗║╔║║╗║╗╣
+╚╩═╩╝╚══╝╚╩═╝╚══╝╚══╝╚══╝╚╩╝
+────────────────────────────
+.        (҂`_´)
+         <,︻╦̵̵̿╤─ ҉     ~  •
+█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
+▂▄▅█████████▅▄▃▂…
+[███████████████████]
+◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
+╔═╦═╗╔══╗╔═╦╗╔══╗╔══╗╔══╗╔═╗
+║║║║║╚║║╝║║║║║╔═╣║╔═╣╚║║╝║╬║
+║║║║║╔║║╗║║║║║╚╗║║╚╗║╔║║╗║╗╣
+╚╩═╩╝╚══╝╚╩═╝╚══╝╚══╝╚══╝╚╩╝
+────────────────────────────
+.        (҂`_´)
+         <,︻╦̵̵̿╤─ ҉     ~  •
+█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
+▂▄▅█████████▅▄▃▂…
+[███████████████████]
+◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
+╔═╦═╗╔══╗╔═╦╗╔══╗╔══╗╔══╗╔═╗
+║║║║║╚║║╝║║║║║╔═╣║╔═╣╚║║╝║╬║
+║║║║║╔║║╗║║║║║╚╗║║╚╗║╔║║╗║╗╣
+╚╩═╩╝╚══╝╚╩═╝╚══╝╚══╝╚══╝╚╩╝
+────────────────────────────
+
+        TAMPA BANYAK BASA-BASI
+RATA NGGA RATA YANG PENTING KIBAR
+              TANGKIS GOBLOK
+────────────────────────────
+          ╔══╗╔╦═╦╗╔══╗╔══╗
+		   ║╔╗║║║║║║║╔╗║║══╣
+		   ║╠╣║║║║║║║╠╣║╠══║
+		   ╚╝╚╝╚═╩═╝╚╝╚╝╚══╝
+           ─────────────────
+			╔══╗╔═╗╔══╗╔═╦═╗
+			╚╗╔╝║╦╝║╔╗║║║║║║
+			─║║─║╩╗║╠╣║║║║║║
+			─╚╝─╚═╝╚╝╚╝╚╩═╩╝
+			────────────────
+					╔══╗╔═╗╔╦╗
+					╚╗╗║║╬║║╔╝
+					╔╩╝║║╔╝║╚╗
+					╚══╝╚╝─╚╩╝
+		`			──────────
+              🇮🇩 🇮🇩 🇮🇩 🇮🇩 🇮🇩 🇮🇩 🇮🇩 
+🇮🇩 Indonesia┏━┳┳┳━┳┳┓🇮🇩 🇮🇩 🇮🇩 🇮🇩 
+🇮🇩 Indonesia┃━┫┃┃┏┫━┫┏┓🇮🇩 🇮🇩 🇮🇩 
+🇮🇩 Indonesia┃┏┫┃┃┗┫┃┃┃┃🇮🇩 🇮🇩 🇮🇩 
+🇮🇩 Indonesia┗┛┗━┻━┻┻┛┃┃🇮🇩 🇮🇩 🇮🇩 
+🇮🇩 Indonesia┏┳┳━┳┳┳┓┏┫┣┳┓🇮🇩 🇮🇩 
+🇮🇩 Indonesia┃┃┃┃┃┃┃┃┣┻┫┃┃🇮🇩 🇮🇩 
+🇮🇩 Indonesia┣┓┃┃┃┃┣┫┃┏┻┻┫🇮🇩 🇮🇩 
+🇮🇩 Indonesia┗━┻━┻━┻🇮🇩 🇮🇩 🇮🇩 🇮🇩 
+━━━━━━━━RATA NI MAH━━━━━━━━
+			╔═╗╔══╗╔══╗╔══╗
+			║╬║║╔╗║╚╗╔╝║╔╗║
+			║╗╣║╠╣║─║║─║╠╣║
+			╚╩╝╚╝╚╝─╚╝─╚╝╚╝
+			───────────────
+			╔═╗╔══╗╔══╗╔══╗
+			║╬║║╔╗║╚╗╔╝║╔╗║
+			║╗╣║╠╣║─║║─║╠╣║
+			╚╩╝╚╝╚╝─╚╝─╚╝╚╝
+			───────────────
+			╔═╗╔══╗╔══╗╔══╗
+			║╬║║╔╗║╚╗╔╝║╔╗║
+			║╗╣║╠╣║─║║─║╠╣║
+			╚╩╝╚╝╚╝─╚╝─╚╝╚╝
+			───────────────
+			
+━━━━━━━━━━━━━━━━━━━━━━━━━ """
+
+helpMessage ="""╭━━━━━━━━━━━━━━━━━━━━╮
+┣🇮🇩━⏩〔Help self〕
+┣🇮🇩━⏩〔Help bot〕
+┣🇮🇩━⏩〔Help group〕
+┣🇮🇩━⏩〔Help set〕
+┣🇮🇩━⏩〔Help media〕
+┣🇮🇩━⏩〔Help admin〕
+┣🇮🇩━⏩〔Help creator〕
+┣🇮🇩━⏩〔Owner〕
+┣🇮🇩━⏩〔Speed〕
+┣🇮🇩━⏩〔Speed test〕
+┣🇮🇩━⏩〔Status〕
+┣🇮🇩━⏩〔Kibar〕
+╰━━━━━━━━━━━━━━━━━━━━╯"""
 
 
 KAC=[arif]
@@ -255,7 +329,7 @@ wait = {
     "dblacklist":False,
     "Qr":False,
     "Contact":False,
-    "Sambutan":False,
+    "Notif":False,
     "inviteprotect":False,    
     "alwaysRead":False,    
     "Sider":{},
@@ -760,7 +834,7 @@ def bot(op):
 
 
         if op.type == 17:
-          if wait["Sambutan"] == True:
+          if wait["Notif"] == True:
             if op.param2 in Creator:
                 return
             ginfo = arif.getGroup(op.param1)
@@ -780,7 +854,7 @@ def bot(op):
             print "MEMBER JOIN TO GROUP"
 
         if op.type == 15:
-          if wait["Sambutan"] == True:
+          if wait["Notif"] == True:
             if op.param2 in Creator:
                 return
             arif.sendText(op.param1,"Good Bye " + arif.getContact(op.param2).displayName +  "\nSee You Next Time . . . (p′︵‵。) 🤗")
@@ -1169,7 +1243,10 @@ def bot(op):
 
             elif msg.text in ["Key set","help set","Help set"]:
                 arif.sendText(msg.to,setMessage)
-
+                
+            elif msg.text in ["KIBAR","kibar","Kibar"]:
+                arif.sendText(msg.to,kibarMessage)               
+                
             elif msg.text in ["Key media","help media","Help media"]:
                 arif.sendText(msg.to,mediaMessage)
                 
@@ -1341,73 +1418,73 @@ def bot(op):
 		    arif.sendText(msg.to,"Khusus Admin")		    
 		    
  
-            elif msg.text in ["Respon1 on"]:
+            elif msg.text in ["R1 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = True
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    arif.sendText(msg.to,"Auto Respon1 Sudah Aktif")
+                    arif.sendText(msg.to,"Auto R1 Sudah Aktif")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["Respon1 off"]:
+            elif msg.text in ["R1 off"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
-                    arif.sendText(msg.to,"Auto Respon1 Sudah Off")
+                    arif.sendText(msg.to,"Auto R1 Sudah Off")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")	
 		    
 		    
-            elif msg.text in ["Respon2 on"]:
+            elif msg.text in ["R2 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     wait["detectMention2"] = True
                     wait["detectMention3"] = False
                     wait["kickMention"] = False
-                    arif.sendText(msg.to,"Auto Respon2 Sudah Aktif")
+                    arif.sendText(msg.to,"Auto R2 Sudah Aktif")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")
-            elif msg.text in ["Respon2 off"]:
+            elif msg.text in ["R2 off"]:
 		if msg.from_ in admin:
                     wait["detectMention2"] = False
-                    arif.sendText(msg.to,"Auto Respon2 Sudah Off")
+                    arif.sendText(msg.to,"Auto R2 Sudah Off")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")	
 		    
 
-            elif msg.text in ["Respon3 on"]:
+            elif msg.text in ["R3 on"]:
 		if msg.from_ in admin:
                     wait["detectMention"] = False
                     wait["detectMention2"] = False
                     wait["detectMention3"] = True
                     wait["kickMention"] = False
-                    arif.sendText(msg.to,"Auto Respon3 Sudah Aktif")
+                    arif.sendText(msg.to,"Auto R3 Sudah Aktif")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["Respon3 off"]:
+            elif msg.text in ["R3 off"]:
 		if msg.from_ in admin:
                     wait["detectMention3"] = False
-                    arif.sendText(msg.to,"Auto Respon3 Sudah Off")
+                    arif.sendText(msg.to,"Auto R3 Sudah Off")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")	
 		    
  
-            elif msg.text in ["Responkick on"]:
+            elif msg.text in ["Rkick on"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = True  
                     wait["detectMention"] = False
                     wait["detectMention2"] = False
                     wait["detectMention3"] = False                    
-                    arif.sendText(msg.to,"Auto Respon Kick Sudah Aktif")
+                    arif.sendText(msg.to,"Auto R Kick Sudah Aktif")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")
 
-            elif msg.text in ["Responkick off"]:
+            elif msg.text in ["Rkick off"]:
 		if msg.from_ in admin:
                     wait["kickMention"] = False                    
-                    arif.sendText(msg.to,"Auto Respon Kick Sudah Off")
+                    arif.sendText(msg.to,"Auto R Kick Sudah Off")
 		else:
 		    arif.sendText(msg.to,"Khusus Admin")			  
 		    
@@ -1516,20 +1593,20 @@ def bot(op):
 
 
             elif msg.text in ["Notif on"]:
-                if wait["Sambutan"] == True:
+                if wait["Notif"] == True:
                     if wait["lang"] == "JP":
-                        arif.sendText(msg.to,"Sambutan Di Aktifkanヾ(*´∀｀*)ﾉ")
+                        arif.sendText(msg.to,"Notif Di Aktifkanヾ(*´∀｀*)ﾉ")
                 else:
-                    wait["Sambutan"] = True
+                    wait["Notif"] = True
                     if wait["lang"] == "JP":
                         arif.sendText(msg.to,"Sudah Onヽ(´▽｀)/")
 
             elif msg.text in ["Notif off"]:
-                if wait["Sambutan"] == False:
+                if wait["Notif"] == False:
                     if wait["lang"] == "JP":
-                        arif.sendText(msg.to,"Sambutan Di Nonaktifkan(　＾∇＾)")
+                        arif.sendText(msg.to,"Notif Di Nonaktifkan(　＾∇＾)")
                 else:
-                    wait["Sambutan"] = False
+                    wait["Notif"] = False
                     if wait["lang"] == "JP":
                         arif.sendText(msg.to,"Sudah Off(p′︵‵。)")
                         
@@ -1556,39 +1633,39 @@ def bot(op):
                     arif.sendText(msg.to, "Heh Belom Di Set")                         
 
 
-            elif msg.text in ["Status"]:
+            elif msg.text in ["Settings","Status"]:
                 md = ""
-		if wait["Sambutan"] == True: md+="│⊷✔️ Sambutan : On\n"
-		else:md+="│⊷✖ Sambutan : Off\n"
-		if wait["AutoJoin"] == True: md+="│⊷✔️ Auto Join : On\n"
-                else: md +="│⊷✖ Auto Join : Off\n"
-		if wait["AutoJoinCancel"] == True: md+="│⊷✔️ Auto Join Cancel : On\n"
-                else: md +="│⊷✖ Auto Join Cancel : Off\n"                
-		if wait["Contact"] == True: md+="│⊷✔️ Info Contact : On\n"
-		else: md+="│⊷✖ Info Contact : Off\n"
-                if wait["AutoCancel"] == True:md+="│⊷✔️ Auto Cancel : On\n"
-                else: md+= "│⊷✖ Auto Cancel : Off\n"
-                if wait["inviteprotect"] == True:md+="│⊷✔️ Invite Protect : On\n"
-                else: md+= "│⊷✖ Invite Protect : Off\n"                
-		if wait["Qr"] == True: md+="│⊷✔️ Qr Protect : On\n"
-		else:md+="│⊷✖ Qr Protect : Off\n"
-		if wait["AutoKick"] == True: md+="│⊷✔️ Auto Kick : On\n"
-		else:md+="│⊷✖ Auto Kick : Off\n"
-		if wait["alwaysRead"] == True: md+="│⊷✔️ Always Read : On\n"
-		else:md+="│⊷✖ Always Read: Off\n"
-		if wait["detectMention"] == True: md+="│⊷✔️ Auto Respon1 : On\n"
-		else:md+="│⊷✖ Auto Respon1 : Off\n"		
-		if wait["detectMention2"] == True: md+="│⊷✔️ Auto Respon2 : On\n"
-		else:md+="│⊷✖ Auto Respon2 : Off\n"	
-		if wait["detectMention3"] == True: md+="│⊷✔️ Auto Respon3 : On\n"
-		else:md+="│⊷✖ Auto Respon3 : Off\n"			
-		if wait["kickMention"] == True: md+="│⊷✔️ Auto Respon Kick : On\n"
-		else:md+="│⊷✖ Auto Respon Kick : Off\n"				
-		if wait["Sider"] == True: md+="│⊷✔️ Auto Sider : On\n"
-		else:md+="│⊷✖ Auto Sider: Off\n"	
-		if wait["Simi"] == True: md+="│⊷✔️ Simisimi : On\n"
-		else:md+="│⊷✖ Simisimi: Off\n"		
-                arif.sendText(msg.to,"╭────────────────────╮\n""│♠✴ S T A T U S ✴♠\n""│────────────────────\n"+md+"╰────────────────────╯")
+		if wait["Notif"] == True: md+="┣🇮🇩━⏩✔️ Notif : On\n"
+		else:md+="┣🇮🇩━⏩✖ Notif : Off\n"
+		if wait["AutoJoin"] == True: md+="┣🇮🇩━⏩✔️ Auto Join : On\n"
+                else: md +="┣🇮🇩━⏩✖ Auto Join : Off\n"
+		if wait["AutoJoinCancel"] == True: md+="┣🇮🇩━⏩✔️ Auto Join Cancel : On\n"
+                else: md +="┣🇮🇩━⏩✖ Auto Join Cancel : Off\n"                
+		if wait["Contact"] == True: md+="┣🇮🇩━⏩✔️ Info Contact : On\n"
+		else: md+="┣🇮🇩━⏩✖ Info Contact : Off\n"
+                if wait["AutoCancel"] == True:md+="┣🇮🇩━⏩✔️ Auto Cancel : On\n"
+                else: md+= "┣🇮🇩━⏩✖ Auto Cancel : Off\n"
+                if wait["inviteprotect"] == True:md+="┣🇮🇩━⏩✔️ Invite Protect : On\n"
+                else: md+= "┣🇮🇩━⏩✖ Invite Protect : Off\n"                
+		if wait["Qr"] == True: md+="┣🇮🇩━⏩✔️ Qr Protect : On\n"
+		else:md+="┣🇮🇩━⏩✖ Qr Protect : Off\n"
+		if wait["AutoKick"] == True: md+="┣🇮🇩━⏩✔️ Auto Kick : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto Kick : Off\n"
+		if wait["alwaysRead"] == True: md+="┣🇮🇩━⏩✔️ Always Read : On\n"
+		else:md+="┣🇮🇩━⏩✖ Always Read: Off\n"
+		if wait["detectMention"] == True: md+="┣🇮🇩━⏩✔️ Auto R1 : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto R1 : Off\n"		
+		if wait["detectMention2"] == True: md+="┣🇮🇩━⏩✔️ Auto R2 : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto R2 : Off\n"	
+		if wait["detectMention3"] == True: md+="┣🇮🇩━⏩✔️ Auto R3 : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto R3 : Off\n"			
+		if wait["kickMention"] == True: md+="┣🇮🇩━⏩✔️ Auto R Kick : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto R Kick : Off\n"				
+		if wait["Sider"] == True: md+="┣🇮🇩━⏩✔️ Auto Sider : On\n"
+		else:md+="┣🇮🇩━⏩✖ Auto Sider: Off\n"	
+		if wait["Simi"] == True: md+="┣🇮🇩━⏩✔️ Simisimi : On\n"
+		else:md+="┣🇮🇩━⏩✖ Simisimi: Off\n"		
+                arif.sendText(msg.to,"╭━━━━━━━━━━━━━━━━━━━━╮\n""│♠✴ SETTINGS ✴♠\n""│━━━━━━━━━━━━━━━━━━━━\n"+md+"╰━━━━━━━━━━━━━━━━━━━━╯")
 
 
             elif msg.text in ["Gift","gift"]:
@@ -2214,9 +2291,9 @@ def bot(op):
                         dataResult.append(contactId[v].displayName + ' ('+timeSeen[v]+')')
                         pass
                     if len(dataResult) > 0:
-                        tukang = "╭────────────────────╮\n│     ♠✴ LIST VIEWERS ✴♠\n│────────────────────\n│⊷"
-                        grp = '\n│⊷ '.join(str(f) for f in dataResult)
-                        total = '\n│────────────────────\n│⊷ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╰────────────────────╯"
+                        tukang = "╭━━━━━━━━━━━━━━━━━━━━╮\n│     ♠✴ LIST VIEWERS ✴♠\n│━━━━━━━━━━━━━━━━━━━━\n┣🇮🇩━⏩"
+                        grp = '\n┣🇮🇩━⏩ '.join(str(f) for f in dataResult)
+                        total = '\n│━━━━━━━━━━━━━━━━━━━━\n┣🇮🇩━⏩ Total %i Viewers (%s)' % (len(dataResult), datetime.now().strftime('%H:%M:%S')) + "\n╰━━━━━━━━━━━━━━━━━━━━╯"
                         arif.sendText(msg.to, "%s %s %s" % (tukang, grp, total))
                         subprocess.Popen("echo '' > dataSeen/"+msg.to+".txt", shell=True, stdout=subprocess.PIPE)
                         arif.sendText(msg.to, "♠Auto Checkpoint♠")                        
@@ -3173,22 +3250,22 @@ def bot(op):
                 contactlist = arif.getAllContactIds()
                 kontak = arif.getContacts(contactlist)
                 num=1
-                msgs="─────────List Friend─────────"
+                msgs="━━━━━━━━━List Friend━━━━━━━━━"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n─────────List Friend─────────\n\nTotal Friend : %i" % len(kontak)
+                msgs+="\n━━━━━━━━━List Friend━━━━━━━━━\n\nTotal Friend : %i" % len(kontak)
                 arif.sendText(msg.to, msgs)
 
             elif msg.text in ["Memlist"]:   
                 kontak = arif.getGroup(msg.to)
                 group = kontak.members
                 num=1
-                msgs="─────────List Member─�����───────-"
+                msgs="━━━━━━━━━List Member━�����━━━━━━━-"
                 for ids in group:
                     msgs+="\n[%i] %s" % (num, ids.displayName)
                     num=(num+1)
-                msgs+="\n─────────List Member─────────\n\nTotal Members : %i" % len(group)
+                msgs+="\n━━━━━━━━━List Member━━━━━━━━━\n\nTotal Members : %i" % len(group)
                 arif.sendText(msg.to, msgs)
 
             
@@ -3363,18 +3440,18 @@ def bot(op):
                 gid = arif.getGroupIdsJoined()
                 h = ""
                 for i in gid:
-                    h += "│⊷" + "%s\n" % (arif.getGroup(i).name +" ~> ["+str(len(arif.getGroup(i).members))+"]")
-                arif.sendText(msg.to,"╭────────────────────╮\n│      ♠✴ LIST GROUPS✴♠\n│────────────────────\n" + h + "│────────────────────" + "\n│ Total Groups =" +" ["+str(len(gid))+"]\n╰────────────────────╯")
+                    h += "┣🇮🇩━⏩" + "%s\n" % (arif.getGroup(i).name +" ~> ["+str(len(arif.getGroup(i).members))+"]")
+                arif.sendText(msg.to,"╭━━━━━━━━━━━━━━━━━━━━╮\n│      ♠✴ LIST GROUPS✴♠\n│━━━━━━━━━━━━━━━━━━━━\n" + h + "│━━━━━━━━━━━━━━━━━━━━" + "\n│ Total Groups =" +" ["+str(len(gid))+"]\n╰━━━━━━━━━━━━━━━━━━━━╯")
 
             elif msg.text in ["Glistmid"]:   
                 gruplist = arif.getGroupIdsJoined()
                 kontak = arif.getGroups(gruplist)
                 num=1
-                msgs="─────────List GrupMid─────────"
+                msgs="━━━━━━━━━List GrupMid━━━━━━━━━"
                 for ids in kontak:
                     msgs+="\n[%i] %s" % (num, ids.id)
                     num=(num+1)
-                msgs+="\n─────────List GrupMid─────────\n\nTotal Grup : %i" % len(kontak)
+                msgs+="\n━━━━━━━━━List GrupMid━━━━━━━━━\n\nTotal Grup : %i" % len(kontak)
                 arif.sendText(msg.to, msgs)
 
 
