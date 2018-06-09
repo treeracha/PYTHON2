@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EtcKnpsU3tPEEq5Roe2f.zsjptOGse28bSLj1PuTA7W.xTp6hmIgOAdAX39GxXhqc/A+qEC7BCoCDH07UKiKKjU=')
+arif.login(token='Et4foWUZjfwMk9Mojogf.zsjptOGse28bSLj1PuTA7W.FuYeKvh4Eb5qnrtJIglOYz39uvsU6u+9B3uY3Gs5VY4=')
 arif.loginResult()
 print "Arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -224,10 +224,6 @@ UNTUK MENGGUSUR ROOM KALIAN
 RATA NGGA RATA YANG PENTING KIBAR
               TANGKIS GOBLOK
 ────────────────────────────
-          ╔══╗╔╦═╦╗╔══╗╔══╗
-		   ║╔╗║║║║║║║╔╗║║══╣
-		   ║╠╣║║║║║║║╠╣║╠══║
-		   ╚╝╚╝╚═╩═╝╚╝╚╝╚══╝
            ─────────────────
 			╔══╗╔═╗╔══╗╔═╦═╗
 			╚╗╔╝║╦╝║╔╗║║║║║║
@@ -320,7 +316,7 @@ wait = {
     'sticker':False,  
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Arif\nContact Me : 👉 arifistifik",    
+    "comment":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -584,7 +580,7 @@ def bot(op):
               if(wait["message"]in[""," ","\n",None]):
                 pass
               else:
-                arif.sendText(op.param1,str(wait["message"]))
+                arif.sendText(op.param1,str(wait["ThankS for add me"]))
 
 
         if op.type == 55:
@@ -623,17 +619,17 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        arif.sendText(op.param1, "Haii " + "✴ " + Name + " ✴" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        arif.sendText(op.param1, "╭━ SIDER✒D✒A✒ T✒ A✒N✒G✒✒" + "\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓" + "\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫" + "\n┃SIDER▪┃ ◾" + Name +  "▪┃" + "\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯")
                                         time.sleep(0.2)
-                                        summon(op.param1,[op.param2])
+                                        summon(op.param1)
                                     else:
-                                        arif.sendText(op.param1, "Haii " + "✴ " + Name + " ✴" + "\nBetah Banget Jadi Penonton. . .\nChat Napa (-__-)   ")
+                                        arif.sendText(op.param1, "🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Merdeka"+"\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●" + "\n▂▄▅██D█O█R██▅▄▃▂…" + "\n[███████████████████]" + "\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙" + "\nNGINTIP..NIH..!!!💥" + Name + "💥")
                                         time.sleep(0.2)
-                                        summon(op.param1,[op.param2])
+                                        summon(op.param1)
                                 else:
-                                    arif.sendText(op.param1, "Haii " + "✴ " + Name + " ✴" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    arif.sendText(op.param1, "…..____________________ , ,__" + "\n……/ `—___________—-_____] – Doorrr✒" + NAME + "▒▓▓█💥" + "\n…../_==o;;;;;;;;_______.:/" + "\n…..), —.(_(__) /" + "\n….// (..) ), —-”" + "\n…//___//" + "\n..//___//" + "\n.//___//")
                                     time.sleep(0.2)
-                                    summon(op.param1,[op.param2])
+                                    summon(op.param1)
                         else:
                             pass
                     else:
@@ -1228,30 +1224,39 @@ def bot(op):
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
                 arif.sendText(msg.to,creatorMessage)
+                arif.sendText(msg.to,"mid")
 
             elif msg.text in ["Key group","help group","Help group"]:
                 arif.sendText(msg.to,groupMessage)
+                arif.sendText(msg.to,"mid")
 
             elif msg.text in ["Key","help","Help"]:
                 arif.sendText(msg.to,helpMessage)
+                arif.sendText(msg.to,"mid")
 
             elif msg.text in ["Key self","help self","Help self"]:
                 arif.sendText(msg.to,selfMessage)
+                arif.sendText(msg.to,"mid")
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
                 arif.sendText(msg.to,botMessage)
+                arif.sendText(msg.to,"mid")
 
             elif msg.text in ["Key set","help set","Help set"]:
                 arif.sendText(msg.to,setMessage)
+                arif.sendText(msg.to,"mid")
                 
             elif msg.text in ["KIBAR","kibar","Kibar"]:
                 arif.sendText(msg.to,kibarMessage)               
+                arif.sendText(msg.to,"mid")
                 
             elif msg.text in ["Key media","help media","Help media"]:
                 arif.sendText(msg.to,mediaMessage)
+                arif.sendText(msg.to,"mid")
                 
             elif msg.text in ["Key admin","help admin","Help admin"]:
                 arif.sendText(msg.to,adminMessage)               
+                arif.sendText(msg.to,"mid")
                 
 
  
@@ -1611,7 +1616,7 @@ def bot(op):
                         arif.sendText(msg.to,"Sudah Off(p′︵‵。)")
                         
                         
-            elif "Sider on" in msg.text:
+            elif "Dooorrrr" in msg.text:
                 try:
                     del cctv['point'][msg.to]
                     del cctv['sidermem'][msg.to]
@@ -1622,7 +1627,7 @@ def bot(op):
                 cctv['sidermem'][msg.to] = ""
                 cctv['cyduk'][msg.to]=True
                 wait["Sider"] = True
-                arif.sendText(msg.to,"Siap On Cek Sider")
+                arif.sendText(msg.to,"Ngintip nih....!!!!!")
                 
             elif "Sider off" in msg.text:
                 if msg.to in cctv['point']:
@@ -2332,9 +2337,9 @@ def bot(op):
                 
                 
 
-            elif msg.text in ["Auto like"]:
+            elif msg.text in ["Autolike"]:
                 wait["likeOn"] = True
-                arif.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
+                arif.sendText(msg.to,"Sudah on")                
 
 
             elif msg.text in ["Steal contact"]:
@@ -2680,23 +2685,6 @@ def bot(op):
                         arif.sendText(msg.to, hasil)
                 except Exception as wak:
                         arif.sendText(msg.to, str(wak))
-                        
-	    elif "musrik " in msg.text:
-					songname = msg.text.replace("musrik ","")
-					params = {"songname": songname}
-					r = requests.get('http://ide.fdlrcn.com/workspace/yumi-apis/joox?' + urllib.urlencode(params))
-					data = r.text
-					data = json.loads(data)
-					for song in data:
-						abc = song[3].replace('https://','http://')
-						hasil = 'Lyric Lagu ('
-						hasil += song[0]
-						hasil += ')\n\n'
-						hasil += song[5]
-						arif.sendText(msg.to, "Lagu " + song[0] + "\nSedang Di Prosses... Tunggu Sebentar ^_^ ")
-						arif.sendAudioWithURL(msg.to,abc)
-						arif.sendText(msg.to, "Title : " + song[0] + "\nLength : " + song[1] + "\nLink download : " + song[4] +"\n\n" + hasil)
-						arif.sendText(msg.to, "Selamat Mendengarkan Lagu " + song[0])
              
             
             
