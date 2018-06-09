@@ -836,7 +836,7 @@ def bot(op):
             ginfo = arif.getGroup(op.param1)
             contact = arif.getContact(op.param2)
             image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-            arif.sendText(op.param1,"Hallo " + arif.getContact(op.param2).displayName + "\nWelcome To ✴ " + str(ginfo.name) + " ✴" + "\nBudayakan Cek Note\nDan Semoga Betah Disini ^_^")
+            arif.sendText(op.param1,"Assalamualaikum.wr.wb" + arif.getContact(op.param2).displayName + "⋱ ⋮ ⋰" + "\n⋯ ◯ ⋯ ︵ 　　　　　　^v^" + "\n¸︵︵( ░░ )︵.︵.︵" + "\n(´░░░░░░ ') ░░░' ) `´︶´¯`︶´`︶´︶´`　^v^　　^v^" + "\n" + "\n╔┓┏╦━━╦┓╔┓╔━━╗╔╗" + "\n║┗┛║┗━╣┃║┃║╯╰║║║" + "\n║┏┓║┏━╣┗╣┗╣╰╯║╠╣" + "\n╚┛┗╩━━╩━╩━╩━━╝╚╝" + "\n♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪♪♫•*¨*•.¸¸❤¸¸.•*¨*•♫♪" + "\nSELAMAT DATANG DI ✴ " + str(ginfo.name) + " ✴" + "\nYuk kenalan sama temen-temen 😄\nJangan lupa baca note ya kak...\nSemoga Betah Disini ^_^")
             c = Message(to=op.param1, from_=None, text=None, contentType=13)
             c.contentMetadata={'mid':op.param2}
             arif.sendMessage(c)  
@@ -915,7 +915,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = arif.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = ["Sekali lagi nge tag gw sumpahin jomblo seumur hidup!","Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                    balas = [ "┌─┐    ┌─┐\n│█ │ /█ /\n│█ │/█ /\n│█  /█ /─┬─┐\n│█ │█ |█ │█ │\n┌┴─┴─┐-┘─┘\n│█ ┌──┘█ █ █ │\n└┐█ █ █ █ █ █ “\n  ‎​(¯`" + cName + "´¯)♥jangan tag arif please...\nlagi kojom nah...."  ]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
