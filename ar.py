@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EteLQ0ddVUGsUI5pK2hf.zsjptOGse28bSLj1PuTA7W.ljfUAM4vBcOoCBMGTZDnWprlhclSsR9TkS9RGoFOyvM=')
+arif.login(token='EtxgOfXhVJCTaPhcrwjf.zsjptOGse28bSLj1PuTA7W.7NOxtfvA/jI/L4DiHnWOenjLRTxJucGYGxNStAskWgA=')
 arif.loginResult()
 print "arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -366,7 +366,7 @@ menuMessage ="""
 ╰━━━━━━━━━━━━━━━━━━━╯
 ──┅━✥ ============ ✥━┅──
 ╭━━━━━━━━━━━━━━━━━━━╮
-┣??🇩━⏩ . .ͮ̋́̋̀͊̊.̷̡̛̆̏̽̎̇̌̎ͮ͋ͬ̑̐̆Ã.̡̢̀ͩ̂ͯ͊́͂̅́ͥͮ̃͑ͥ.ͤ̔͒ͦͮ҉Ř.̵̸́͋ͮ̋̋̔͝.̡̢̑̅ͭͭ̑̈ͯ̉ͤ́ͣ̅ͮ̏ͪ͟.Ị̸̈ͤ͜͡.̅̇́̌.͑͋̔̽ͬ̃́͋̉̀̅F̷.̉̎̌ͥ̆ͭ͒ͪ͞.̎ͤ̄̃̌ͭ̅̀͡   🇮🇩━⏩
+┣🇮🇩━⏩ . .ͮ̋́̋̀͊̊.̷̡̛̆̏̽̎̇̌̎ͮ͋ͬ̑̐̆Ã.̡̢̀ͩ̂ͯ͊́͂̅́ͥͮ̃͑ͥ.ͤ̔͒ͦͮ҉Ř.̵̸́͋ͮ̋̋̔͝.̡̢̑̅ͭͭ̑̈ͯ̉ͤ́ͣ̅ͮ̏ͪ͟.Ị̸̈ͤ͜͡.̅̇́̌.͑͋̔̽ͬ̃́͋̉̀̅F̷.̉̎̌ͥ̆ͭ͒ͪ͞.̎ͤ̄̃̌ͭ̅̀͡   🇮🇩━⏩
 ╰━━━━━━━━━━━━━━━━━━━╯
 """
 
@@ -437,7 +437,6 @@ helpMessage ="""
 ┣🇮🇩━⏩〔menu〕
 ┣🇮🇩━⏩〔Speed〕
 ┣🇮🇩━⏩〔Status〕
-┣🇮🇩━⏩〔Kibar〕
 ╰━━━━━━━━━━━━━━╯
 ╭━━━━━━━━━━━━━━╮
 ┣🇮🇩━⏩.ͮ̋́̋̀͊̊.̷̡̛̆̏̽̎̇̌̎ͮ͋ͬ̑̐̆Ã.̡̢̀ͩ̂ͯ͊́͂̅́ͥͮ̃͑ͥ.ͤ̔͒ͦͮ҉Ř.̵̸́͋ͮ̋̋̔͝.̡̢̑̅ͭͭ̑̈ͯ̉ͤ́ͣ̅ͮ̏ͪ͟.Ị̸̈ͤ͜͡.̅̇́̌.͑͋̔̽ͬ̃́͋̉̀̅F̷.̉̎̌ͥ̆ͭ͒ͪ͞.̎ͤ̄̃̌ͭ̅̀͡🇮🇩━⏩
