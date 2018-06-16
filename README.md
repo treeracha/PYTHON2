@@ -6,7 +6,7 @@ GET TOKEN :
 - `Google Chrome`
 - `http://101.255.95.249:6969`
 -
-Cara Install Bot Vipro :
+Cara Install Bot :
 ------
 Di C9 :
 - Ketik -> `sudo apt-get update`
@@ -49,7 +49,7 @@ Di Termux :
 - Ketik -> `python2 arif.py`
 
 
-Credit By@ Vipro.
+Credit By@ arifistifik.
 ------
 - `Add My ID LINE : arifistifik`
 
