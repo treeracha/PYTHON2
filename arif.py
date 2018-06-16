@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='Et4foWUZjfwMk9Mojogf.zsjptOGse28bSLj1PuTA7W.FuYeKvh4Eb5qnrtJIglOYz39uvsU6u+9B3uY3Gs5VY4=')
+arif.login(token='EtxgOfXhVJCTaPhcrwjf.zsjptOGse28bSLj1PuTA7W.7NOxtfvA/jI/L4DiHnWOenjLRTxJucGYGxNStAskWgA=')
 arif.loginResult()
 print "Arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -623,11 +623,11 @@ def bot(op):
                                         time.sleep(0.2)
                                         summon(op.param1)
                                     else:
-                                        arif.sendText(op.param1, "🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Merdeka"+"\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●" + "\n▂▄▅██D█O█R██▅▄▃▂…" + "\n[███████████████████]" + "\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙" + "\nNGINTIP..NIH..!!!💥" + Name + "💥")
+                                        arif.sendText(op.param1, "🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Merdeka"+"\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●" + "\n▂▄▅██D█O█R██▅▄▃▂…" + "\n[███████████████████]" + "\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙" + "\nNGINTIP..NIH..!!!" + Name + ".")
                                         time.sleep(0.2)
                                         summon(op.param1)
                                 else:
-                                    arif.sendText(op.param1, "…..____________________ , ,__" + "\n……/ `—___________—-_____] – Doorrr✒" + NAME + "▒▓▓█💥" + "\n…../_==o;;;;;;;;_______.:/" + "\n…..), —.(_(__) /" + "\n….// (..) ), —-”" + "\n…//___//" + "\n..//___//" + "\n.//___//")
+                                    arif.sendText(op.param1, " 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Merdeka"+"\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●" + "\n▂▄▅██D█O█R██▅▄▃▂…" + "\n[███████████████████]" + "\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙" + "\nNGINTIP..NIH..!!!" + Name + ".")
                                     time.sleep(0.2)
                                     summon(op.param1)
                         else:
@@ -915,7 +915,7 @@ def bot(op):
                  if wait["detectMention2"] == True:          
                     contact = arif.getContact(msg.from_)
                     cName = contact.displayName
-                    balas = [ "┌─┐    ┌─┐\n│█ │ /█ /\n│█ │/█ /\n│█  /█ /─┬─┐\n│█ │█ |█ │█ │\n┌┴─┴─┐-┘─┘\n│█ ┌──┘█ █ █ │\n└┐█ █ █ █ █ █ “\n  ‎​(¯`" + cName + "´¯)♥jangan tag arif please...\nlagi kojom nah...."  ]
+                    balas = [ "┌─┐    ┌─┐\n│█ │ /█ /\n│█ │/█ /\n│█  /█ /─┬─┐\n│█ │█ |█ │█ │\n┌┴─┴─┐-┘─┘\n│█ ┌──┘█ █ █ │\n└┐█ █ █ █ █ █ “\n  ‎​(¯`" + cName + "´¯)♥jangan tag please...\nlagi kojom nah...."  ]
                     ret_ = random.choice(balas)
                     name = re.findall(r'@(\w+)', msg.text)
                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
