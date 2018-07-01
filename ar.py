@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EtxgOfXhVJCTaPhcrwjf.zsjptOGse28bSLj1PuTA7W.7NOxtfvA/jI/L4DiHnWOenjLRTxJucGYGxNStAskWgA=')
+arif.login(token='EuhWLiSNqbRmNq7NUbqc.YiNb/pDcDpex4kdwNmXvNa.PkjXAP9mCyQEeTimSqMUr5CqwAnvpiGV8W6FvqPVx1I=')
 arif.loginResult()
 print "arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -194,7 +194,7 @@ groupMessage ="""
 ┣🇮🇩━⏩..ͮ̋́̋̀͊̊.̷̡̛̆̏̽̎̇̌̎ͮ͋ͬ̑̐̆Ã.̡̢̀ͩ̂ͯ͊́͂̅́ͥͮ̃͑ͥ.ͤ̔͒ͦͮ҉Ř.̵̸́͋ͮ̋̋̔͝.̡̢̑̅ͭͭ̑̈ͯ̉ͤ́ͣ̅ͮ̏ͪ͟.Ị̸̈ͤ͜͡.̅̇́̌.͑͋̔̽ͬ̃́͋̉̀̅F̷.̉̎̌ͥ̆ͭ͒ͪ͞.̎ͤ̄̃̌ͭ̅̀͡🇮🇩━⏩
 ╰━━━━━━━━━━━━━━━╯
 """
-ar="u65224f4e8812136f01b25275a54b5aef"
+ar="uc889c1f8f74274f117e0a0d69ccc559c"
 
 setMessage ="""
 ╭━━━━━━━━━━━━━━━╮
@@ -447,8 +447,8 @@ helpMessage ="""
 KAC=[arif]
 mid = arif.getProfile().mid
 Bots=[mid]
-Creator=["u65224f4e8812136f01b25275a54b5aef"]
-admin=["u65224f4e8812136f01b25275a54b5aef"]
+Creator=["uc889c1f8f74274f117e0a0d69ccc559c"]
+admin=["uc889c1f8f74274f117e0a0d69ccc559c"]
 
 contact = arif.getProfile()
 backup1 = arif.getProfile()
@@ -761,6 +761,7 @@ def bot(op):
                     if cctv['cyduk'][op.param1]==True:
                         if op.param1 in cctv['point']:
                             Name = arif.getContact(op.param2).displayName
+                            Np = arif.getContact(op.param2).pictureStatus
 #                            Name = summon(op.param2)
                             if Name in cctv['sidermem'][op.param1]:
                                 pass
@@ -770,14 +771,17 @@ def bot(op):
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
                                         arif.sendText(op.param1, "Halo " + "☸ " + Name + " ☸")
+                                        arif.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net/" + Np)
                                         time.sleep(0.2)
                                         summon(op.param1)
                                     else:
                                         arif.sendText(op.param1, "Halo " + "☸ " + Name + " ☸")
+                                        arif.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net/" + Np)
                                         time.sleep(0.2)
                                         summon(op.param1)
                                 else:
                                     arif.sendText(op.param1, "Halo " + "☸ " + Name + " ☸")
+                                    arif.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net/" + Np)
                                     time.sleep(0.2)
                                     summon(op.param1)
                         else:
@@ -2117,7 +2121,7 @@ def bot(op):
                 arif.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "u65224f4e8812136f01b25275a54b5aef"
+                midd = "uc889c1f8f74274f117e0a0d69ccc559c"
                 arif.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
