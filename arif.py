@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 arif = LINETCR.LINE()
 #arif.login(qr=True)
-arif.login(token='EtxgOfXhVJCTaPhcrwjf.zsjptOGse28bSLj1PuTA7W.7NOxtfvA/jI/L4DiHnWOenjLRTxJucGYGxNStAskWgA=')
+arif.login(token='Eus7OTrU2T9re2PJn1gc.YiNb/pDcDpex4kdwNmXvNa.Mep9cxi4ca39DBndm01S41SUcq5cWfkcNgOPlIUa53w=')
 arif.loginResult()
 print "Arif-Login Success\n\n=====[Sukses Login]====="
 
@@ -119,7 +119,7 @@ groupMessage ="""╭━━━━━━━━━━━━━━━━╮
 ┣🇮🇩━⏩〔Getgroup image〕
 ┣🇮🇩━⏩〔Urlgroup Image〕
 ╰━━━━━━━━━━━━━━━━╯"""
-ar="u65224f4e8812136f01b25275a54b5aef"
+ar="uc889c1f8f74274f117e0a0d69ccc559c"
 
 setMessage ="""╭━━━━━━━━━━━━━━━╮
 ┣🇮🇩━⏩〔Notif on/off〕
@@ -180,7 +180,7 @@ adminMessage ="""╭━━━━━━━━━━━━━━━━━━━━
 ┣🇮🇩━⏩〔Rkick on/off〕
 ╰━━━━━━━━━━━━━━━━━━━━╯"""
 
-kibarMessage =""" ╭━ W✒ E━ L✒ C━ O✒ M━ E✒✒✒
+kibarMessage ="""╭━ W✒ E━ L✒ C━ O✒ M━ E✒✒✒
 ╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓
 ┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫
 ┃HALLO▪┃ ◾KAMI DATANG LAGI   ▪┃
@@ -263,7 +263,7 @@ RATA NGGA RATA YANG PENTING KIBAR
 			
 ━━━━━━━━━━━━━━━━━━━━━━━━━ """
 
-helpMessage ="""╭━━━━━━━━━━━━━━━━━━━━╮
+helpMessage ="""╭━━━━━━━━━━━━━━╮
 ┣🇮🇩━⏩〔Help self〕
 ┣🇮🇩━⏩〔Help bot〕
 ┣🇮🇩━⏩〔Help group〕
@@ -276,14 +276,14 @@ helpMessage ="""╭━━━━━━━━━━━━━━━━━━━━�
 ┣🇮🇩━⏩〔Speed test〕
 ┣🇮🇩━⏩〔Status〕
 ┣🇮🇩━⏩〔Kibar〕
-╰━━━━━━━━━━━━━━━━━━━━╯"""
+╰━━━━━━━━━━━━━━╯"""
 
 
 KAC=[arif]
 mid = arif.getProfile().mid
 Bots=[mid]
-Creator=["u65224f4e8812136f01b25275a54b5aef"]
-admin=["u65224f4e8812136f01b25275a54b5aef"]
+Creator=["uc889c1f8f74274f117e0a0d69ccc559c"]
+admin=["uc889c1f8f74274f117e0a0d69ccc559c"]
 
 contact = arif.getProfile()
 backup1 = arif.getProfile()
@@ -317,6 +317,12 @@ wait = {
     'timeline':True,
     "Timeline":True,
     "comment":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",    
+    "comment1":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
+    "comment2":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
+    "comment3":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
+    "comment4":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
+    "comment5":"\n────────────────────────\n 🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n╭━ A✒ U━ T✒ O━ L✒ I━ K✒E✒✒\n╰╮┏━┳┳┳┓  ┏┳┳┳┳┳┓  ┏┳┳┳┳┳┓\n┏┻╋━╋┻┻┫  ┣┻┻┻┻┻┫  ┣┻┻┻┻┻┫\n┃ARIFISTIFIK ◾ID SMULE▪ARIF_MH┃\n┗ⓞ━━━ⓞ┻━┻ⓞ━━ⓞ┻━┻ⓞ━━ⓞ╯\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia🇮🇩 Indonesia\n.        (҂`_´)\n         <,︻╦̵̵̿╤─ ҉     ~  •\n█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●\n▂▄▅█████████▅▄▃▂…\n[███████████████████]\n◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n───────────────\n",
+    "comment6":"SEKIAN LIKE DAN KOMENTAR GUE SEMOGA LU BAHAGIA DISANA WKWKWK",
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
@@ -993,6 +999,13 @@ def bot(op):
                      url = msg.contentMetadata["postEndUrl"]
                      arif.like(url[25:58], url[66:], likeType=1005)
                      arif.comment(url[25:58], url[66:], wait["comment"])
+                     arif.comment(url[25:58], url[66:], wait["comment1"])
+                     arif.comment(url[25:58], url[66:], wait["comment2"])
+                     arif.comment(url[25:58], url[66:], wait["comment3"])
+                     arif.comment(url[25:58], url[66:], wait["comment4"])
+                     arif.comment(url[25:58], url[66:], wait["comment5"])
+                     arif.comment(url[25:58], url[66:], wait["comment6"])
+                     arif.comment(url[25:58], url[66:], wait["comment7"])
                      arif.sendText(msg.to,"Like Success")                     
                      wait['likeOn'] = False
 
@@ -1224,39 +1237,39 @@ def bot(op):
  
             elif msg.text in ["Key creator","help creator","Help creator"]:
                 arif.sendText(msg.to,creatorMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
 
             elif msg.text in ["Key group","help group","Help group"]:
                 arif.sendText(msg.to,groupMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
 
             elif msg.text in ["Key","help","Help"]:
                 arif.sendText(msg.to,helpMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
 
             elif msg.text in ["Key self","help self","Help self"]:
-                arif.sendText(msg.to,selfMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg.to,selfMessage)              
+                arif.sendText(msg)
 
             elif msg.text in ["Key bot","help bot","Help bot"]:
                 arif.sendText(msg.to,botMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
 
             elif msg.text in ["Key set","help set","Help set"]:
                 arif.sendText(msg.to,setMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
                 
             elif msg.text in ["KIBAR","kibar","Kibar"]:
-                arif.sendText(msg.to,kibarMessage)               
-                arif.sendText(msg.to,"mid")
+            	arif.sendText(msg.to,kibarMessage)               
+                arif.sendText(msg.to, "MY FAMS")
                 
             elif msg.text in ["Key media","help media","Help media"]:
                 arif.sendText(msg.to,mediaMessage)
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
                 
             elif msg.text in ["Key admin","help admin","Help admin"]:
                 arif.sendText(msg.to,adminMessage)               
-                arif.sendText(msg.to,"mid")
+                arif.sendText(msg)
                 
 
  
@@ -2393,7 +2406,7 @@ def bot(op):
                 arif.inviteIntoGroup(msg.to,[midd])
 
             elif "Invite creator" in msg.text:
-                midd = "u65224f4e8812136f01b25275a54b5aef"
+                midd = "uc889c1f8f74274f117e0a0d69ccc559c"
                 arif.inviteIntoGroup(msg.to,[midd])
 
             elif msg.text in ["Welcome","welcome","Welkam","welkam","Wc","wc"]:
@@ -3066,6 +3079,105 @@ def bot(op):
                 msg.contentMetadata = {'mid': msg.from_}
                 arif.sendMessage(msg)
 
+            elif msg.text in ["Kibaran","MY FAMS"]:
+                msg.contentType = 13
+                kibaran1 = "udefd75736ced80dc8fca8966d246ac6f"
+                kibaran2 = "u959231880d4f63db97ad90f41859b5b4"
+                kibaran3 = "ucd1bf4681a9310045c6b6fce00b18172"
+                kibaran4 = "u702e1287d9166485864d4cd3abda3e59"
+                kibaran5 = "ua99f3c139ab0b25918184bb047403003"
+                kibaran6 = "u4ac89e2857f399253290ad9d3b751554"
+                kibaran7 = "u5d7fcdd055a6de2a6fd5735779235646"
+                kibaran8 = "u581f341f978151394fb5e1e505ab9851"
+                kibaran9 = "u90b96d89ce8813efbd11c548a5b6fa3c"
+                kibaran10 = "u8bc856497159637e0dcb8450fa06e8bd"
+                kibaran11 = "ue8683bf4a314bcf0b35c15194d587ca9"
+                kibaran12 = "uf20915cdf94ddfcfca65328ae9ecf32f"
+                kibaran13 = "u581d09157fc47e15ece9796a765080e8"
+                kibaran14 = "u8cf3c7c7aba529dab47755b0e7375251"
+                kibaran15 = "u8770ecbc6635e4837595eadcb5a9c9c2"
+                kibaran16 = "u4b3fda5c4db9a292fbba9a3417c836f9"
+                kibaran17 = "u1ba0f8d6a4fec5edf70df951190aef64"
+                kibaran18 = "ufcd3e0fb51c4a7e9c5ccfb4087b0ba5e"
+                kibaran19 = "u8a25013e3d9d9e3c4091dd03d3e6cff4"
+                kibaran20 = "u904a026b6ebe344ff4fdd72ca2b87dc5"
+                kibaran21 = "u52b0a26c865f3e71204a6fb6533bc06c"
+                kibaran22 = "uf44f06815769534c4fed2a905f0d527e"
+                kibaran23 = "ua23886c9dea0a603bde1f8b74622305f"
+                kibaran24 = "ue28d2f1e6447e85638ed5ae9f03f1c12"
+                kibaran25 = "u58443b7393aedc0dae4d4e0676450da4"
+                kibaran26 = "u5b343d9bf64c9db91b97238cb019b701"
+                kibaran27 = "u20001e62816b04fc2efd27d98035dc9a"
+                kibaran28 = "u619700f14e75b1130bfde4594a274533"
+                kibaran29 = "u49fe734da9f8acedf2acc1faa82e65f0"
+                kibaran30 = "u0837f03a621c6876df5c67d0a7386a53"
+                kibaran31 = "u8ee0919fab6e7b2a4aa45eef6ecffb7b"
+                msg.contentMetadata = {'mid': ar}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran1}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran2}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran3}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran4}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran5}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran6}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran7}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran8}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran9}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran10}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran11}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran12}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran13}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran14}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran15}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran16}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran17}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran18}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran19}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran20}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran21}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran22}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran23}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran24}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran25}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran26}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran27}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran28}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran29}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran30}
+                random.choice(KAC).sendMessage(msg)
+                msg.contentMetadata = {'mid': kibaran31}
+                random.choice(KAC).sendMessage(msg)
+		random.choice(KAC).sendText(msg.to,"KEEP ENJOY THE GAME (^_^)")
+		
             elif "apakah " in msg.text:
                 apk = msg.text.replace("apakah ","")
                 rnd = ["Ya","Tidak","Bisa Jadi","Mungkin"]
