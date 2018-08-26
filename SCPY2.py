@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#Arif Bot
+#Calon Almarhum
 
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
