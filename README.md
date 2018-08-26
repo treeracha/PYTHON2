@@ -1,10 +1,10 @@
-# Arif
+# SEMUA AKAN MATI PADA WAKTUNYA
 BOT PROTECT CREATOR & ADMIN
 ------
 GET TOKEN :
 ------
-- `Google Chrome`
-- `http://101.255.95.249:6969`
+- `RUN SCRIPT BOT`
+- `QR TOKEN`
 -
 Cara Install Bot :
 ------
@@ -19,9 +19,9 @@ Di C9 :
 - Ketik -> `sudo pip install bs4`
 - Ketik -> `sudo pip install gtts`
 - Ketik -> `sudo pip install googletrans`
-- Ketik -> `git clone https://github.com/arifistifik/ar`
-- Ketik -> `cd ar`
-- Ketik -> `python arif.py`
+- Ketik -> `git clone https://github.com/PHIEZUKE/PYTHON2`
+- Ketik -> `cd PYTHON2`
+- Ketik -> `python SCPY2.py`
 
 Di Termux :
 - Ketik -> `pkg update`
@@ -34,26 +34,27 @@ Di Termux :
 - Ketik -> `pip2 install gtts`
 - Ketik -> `pip2 install beautifulsoup`
 - Ketik -> `pip2 install googletrans`
-- Ketik -> `git clone https://github.com/arifistifik/ar`
-- Ketik -> `cd ar`
-- Ketik -> `python2 arif.py`
+- Ketik -> `git clone https://github.com/PHIEZUKE/PYTHON2`
+- Ketik -> `cd PYTHON2`
+- Ketik -> `python2 SCPY2.py`
 
 Cara Menjalankan Bot Kembali :
 ------
 Di C9 :
-- Ketik -> `cd ar`
-- Ketik -> `python arif.py`
+- Ketik -> `cd PYTHON2`
+- Ketik -> `python SCPY2.py`
 
 Di Termux :
-- Ketik -> `cd ar`
-- Ketik -> `python2 arif.py`
+- Ketik -> `cd PYTHON2`
+- Ketik -> `python2 SCPY2.py`
 
 
 Credit By@ arifistifik.
 ------
-- `Add My ID LINE : arifistifik`
+- `Add My ID LINE : calon_almarhum99`
 
 Thx To :
 ------
+- `ALLAH SWT`
 - `LINE-TCR TEAM`
 
