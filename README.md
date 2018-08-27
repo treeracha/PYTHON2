@@ -8,7 +8,7 @@ GET TOKEN :
 -
 Cara Install Bot :
 ------
-Di C9 :
+Di C9io :
 - Ketik -> `sudo apt-get update`
 - Ketik -> `sudo apt-get install git`
 - Ketik -> `sudo apt-get install python-sofware-properties`
@@ -40,7 +40,7 @@ Di Termux :
 
 Cara Menjalankan Bot Kembali :
 ------
-Di C9 :
+Di C9io :
 - Ketik -> `cd PYTHON2`
 - Ketik -> `python SCPY2.py`
 
